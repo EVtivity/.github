@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://evtivity.com">Website</a> &middot;
   <a href="https://evtivity.com/docs/getting-started/introduction">Get Started</a> &middot;
-  <a href="https://evtivity.com/api">API Reference</a>
+  <a href="https://evtivity.com/api-reference">API Reference</a>
 </p>
 
 ---

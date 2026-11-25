@@ -7,36 +7,50 @@
 <h3 align="center">Freedom in EV Charging Management</h3>
 
 <p align="center">
-  A free OCPP-compliant charging station management system.<br />
-  Monitor stations, manage sessions, and scale your charging network.
+  An AI-powered, OCPP-compliant charging station management system.<br />
+  Run your stations, sessions, drivers, billing and site power from one platform.
 </p>
 
 <p align="center">
   <a href="https://evtivity.com">Website</a> &middot;
   <a href="https://evtivity.com/docs/getting-started/introduction">Get Started</a> &middot;
-  <a href="https://evtivity.com/api-reference">API Reference</a>
+  <a href="https://evtivity.com/api-reference">API Reference</a> &middot;
+  <a href="https://github.com/EVtivity/evtivity-csms/releases">Releases</a> &middot;
+  <a href="https://discord.gg/kKdJxFRksz">Discord</a>
 </p>
 
 ---
 
-### Everything you need to run an EV charging network
+### What EVtivity does
 
-**Full OCPP compliance.** Supports OCPP 1.6 and 2.1 simultaneously with conformance-tested handlers for any charging station.
+**OCPP 1.6, 2.0.1 and 2.1.** Every version at once, with handlers tested against the Open Charge Alliance OCTT conformance suite.
 
-**Real-time monitoring.** Live station status, connector states, and active session tracking with instant WebSocket updates.
+**Operator dashboard.** Stations, sessions, drivers, fleets, billing, reports and analytics in six languages, with live updates.
 
-**Operator dashboard.** Manage stations, sessions, drivers, billing, reports, and analytics from a single dashboard in 6 languages.
+**AI assistant.** Ask about your network in plain language, attach a photo or a log, and confirm every change it proposes. Works with Anthropic, OpenAI, Google Gemini or DeepSeek.
 
-**Driver portal.** Mobile-first portal for EV drivers to find stations, scan QR codes, start sessions, and manage payments.
+**Load management.** Share site power across transformers, panels and circuits, per phase, with battery and solar supply and departure-aware fleet charging.
 
-**AI-powered operations.** Ask questions about your network in natural language. Draft support replies with full case context. Works with Anthropic, OpenAI, and Gemini.
+**Billing and payments.** Stripe and Adyen, time-of-day pricing, split billing, idle fees, guest charging and fleet invoicing.
 
-**Billing and payments.** Stripe integration with time-of-day pricing, split billing, idle fees, guest charging, and multi-currency support.
+**Plug and Charge and roaming.** ISO 15118 Plug and Charge, and OCPI 2.2.1 and 2.3.0 with CPO and eMSP roles.
 
-**Roaming ready.** OCPI 2.2.1 and 2.3.0 with CPO and eMSP roles for inter-network charging.
+**Drivers.** A web portal and a mobile app to find stations, start sessions, pay, and follow their charging.
 
-**Deploy anywhere.** Docker Compose for development. Kubernetes Helm chart with Istio or Envoy Gateway for production.
+**Deploy anywhere.** Docker Compose for development, a Helm chart with Istio or Envoy Gateway for Kubernetes, and AWS CDK for ECS Fargate.
+
+### Projects
+
+| Repository | What it is |
+|---|---|
+| [evtivity-csms](https://github.com/EVtivity/evtivity-csms) | The charging station management system: OCPP, OCPI and REST servers, operator dashboard and driver portal |
+| [evtivity-mobile-app](https://github.com/EVtivity/evtivity-mobile-app) | The driver app for iOS and Android |
+| [evtivity-csms-helm](https://github.com/EVtivity/evtivity-csms-helm) | Helm chart for Kubernetes |
+| [evtivity-csms-cdk](https://github.com/EVtivity/evtivity-csms-cdk) | AWS CDK infrastructure: ECS Fargate, Aurora PostgreSQL, ElastiCache, ALB with WAF |
+| [evtivity-skills](https://github.com/EVtivity/evtivity-skills) | Agent Skills that teach coding agents to set up, use and troubleshoot EVtivity |
+| [evtivity-ev-tester](https://github.com/EVtivity/evtivity-ev-tester) | An open-source EV-side simulator for bench testing AC chargers and CSMS backends |
+| [evtivity-iot-panel](https://github.com/EVtivity/evtivity-iot-panel) | A Wi-Fi touch-screen control panel for the CSMS on an ESP32-S3 |
 
 ### License
 
-Source available under the Business Source License 1.1. Free for single-operator production use. See [LICENSE.md](https://github.com/EVtivity/evtivity-csms/blob/main/LICENSE.md) for full terms.
+The CSMS is source available under the Business Source License 1.1. You may run it in production for free as a single operator, or for a single end customer. See [LICENSE.md](https://github.com/EVtivity/evtivity-csms/blob/main/LICENSE.md) for the full terms.
